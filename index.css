@@ -1,0 +1,52 @@
+:root{
+  --bg:#eefcf3;
+  --card:#ffffff;
+  --muted:#7b8b84;
+  --accent:#157a39;
+}
+*{box-sizing:border-box}
+html,body,#root{height:100%; margin:0; font-family: Inter, system-ui, Arial; background:linear-gradient(180deg,#f7fff8,#ecfaf1); color:#0b2f1b}
+.app-root{min-height:100vh; display:flex; flex-direction:column; gap:20px; padding:28px}
+.header{display:flex; justify-content:center}
+.logo-row{display:flex; align-items:center; gap:16px}
+.logo{background:var(--accent); color:white; width:56px; height:56px; border-radius:12px; display:flex; align-items:center; justify-content:center; font-size:24px}
+.header h1{margin:0; font-size:18px}
+.tagline{margin:4px 0 0; color:var(--accent)}
+
+.tabs{display:flex; justify-content:center; gap:12px; margin-top:8px}
+.tab{background:#f1efef; padding:10px 20px; border-radius:18px; border:none; cursor:pointer}
+.tab.active{background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.06); font-weight:600}
+
+.container{max-width:1200px; margin:18px auto; width:100%}
+.grid-two{display:grid; grid-template-columns:1fr 1fr; gap:20px}
+
+.card{background:var(--card); padding:18px; border-radius:12px; box-shadow:0 6px 18px rgba(12,12,15,0.04)}
+.upload-card .dropbox{border:2px dashed #2fb45a; border-radius:8px; padding:28px; min-height:160px; position:relative; overflow:hidden}
+.drop-inner{display:flex; flex-direction:column; align-items:center; justify-content:center; height:100%}
+.file-input{position:absolute; inset:0; opacity:0; cursor:pointer}
+.preview{max-width:100%; max-height:260px; display:block; margin:0 auto; border-radius:8px}
+.btn{background:var(--accent); color:white; padding:10px 14px; border-radius:8px; border:none; cursor:pointer}
+
+.muted{color:var(--muted)}
+.note{margin-top:10px; background:#f7f7f7; padding:10px; border-radius:8px; font-size:13px}
+
+.results-card .result-inner{display:flex; gap:12px; align-items:center}
+.result-thumb{width:160px; height:160px; object-fit:cover; border-radius:8px}
+.empty-state{display:flex; flex-direction:column; align-items:center; justify-content:center; min-height:180px; color:var(--muted)}
+.big-icon{font-size:30px; margin-bottom:8px}
+
+.full-card{min-height:200px}
+
+.history-list{display:flex; flex-direction:column; gap:12px}
+.history-item{display:flex; gap:12px; align-items:center}
+.thumb{width:80px; height:80px; object-fit:cover; border-radius:8px}
+.mono{font-family:monospace; color:#444}
+
+.metrics-row{display:flex; gap:12px; margin-bottom:12px; flex-wrap:wrap}
+.metric{flex:1 1 220px; padding:14px; border-radius:10px}
+.metric .big{font-size:20px; margin-top:8px}
+.green{color:green}
+.red{color:#e06445}
+.purple{color:rebeccapurple}
+
+.footer{margin-top:auto; text-align:center; color:var(--muted); padding:12px}
