@@ -15,6 +15,14 @@ To use this app you will need to follow the steps as below.
 
 4. Once done with all the above steps create 2 terminals and first run the backend code i.e the app.py file, to do so just type **"flask run"** and make sure you do this in your virtual environment only, to activate it type **environmentname\Scripts\Activate** for windows users and for mac users **"source venv/bin/activate"** And then in another terminal to activate reacy type **"npm run dev"**.
 
-5. Click on the link displayed in the terminal of frontend and you will land on the home page of our app. Where you will see the upload section for the images of plant. For security purpose the we have implemented data integrity checks on the input images (e.g., using hashing or digital signatures) before passing them to the ML model, to ensure the input data hasn't been tampered with or corrupted (a basic step towards securing the input pipeline).
+5. Using the AppClick the link displayed in the frontend terminal to open the app in your browser. You’ll land on the home page, where you can upload plant images for analysis.
+
+🔒 Security NoteFor added safety, AgriGuard implements data integrity checks on uploaded images (e.g., hashing or digital signatures) before passing them to the ML model. This ensures that input data hasn’t been tampered with or corrupted — a basic but important step toward securing the input pipeline.
+
+🌾 Why AgriGuard?- Easy to use: just upload a photo.
+- Fast and accurate CNN-based predictions.
+- Confidence scores to help you trust the results.
+- Dashboard and history pages to track past analyses.   
+- Built with farmers in mind, but useful for anyone interested in plant health.
 
  
